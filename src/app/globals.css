@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(70, 70, 70);
+  color: white;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
