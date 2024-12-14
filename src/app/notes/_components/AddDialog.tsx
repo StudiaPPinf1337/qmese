@@ -2,7 +2,7 @@
 
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 import {
   Dialog,
   DialogContent,
@@ -22,7 +22,7 @@ type AddDialogProps = {
 export const AddDialog: React.FC<AddDialogProps> = (props) => {
   const { open, setOpen, setNotes } = props;
 
-  const { register, handleSubmit, reset, setValue } = useForm<{
+  const { register, handleSubmit, reset } = useForm<{
     label: string;
     content: string;
   }>();
